@@ -1,10 +1,12 @@
-import { UserButton } from '@clerk/nextjs'
-import React from 'react'
+"use client"
+
+import { Modal } from '@/components/ui/modal'
+
 
 const page = () => {
   return (
     <div className='p-4'>
-    <UserButton afterSignOutUrl='/sign-in'/>
+    <Modal title="test" desc="create your store" isOpen onClose={()=>{}}>children</Modal>
     </div>
   )
 }

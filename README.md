@@ -40,4 +40,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -integrated clerk auth
 -used shadcn ui for dialog box
 -created modal component 
--integrated zustand for checking close open of box
+-integrated zustand as state management
+-created a store of our model using zustand
+-used it in modal store component
+-added that component in modal provider to avoid hydration error
+-added modal provider component at root at layout to make modal store component reusable and without doing this always-<ModalStore/>-It is always present in our root
